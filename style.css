@@ -1,0 +1,180 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #eef2f3;
+    padding: 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+}
+
+.tab button:hover {
+    background-color: #ddd;
+}
+
+.tab button.active {
+    background-color: #ccc;
+}
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+    background: #fff;
+    margin-bottom: 30px;
+}
+
+.form-card {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    width: 400px;
+    margin: 0 auto 30px auto;
+}
+
+.form-header {
+    background: #2ecc71;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.form-header h3 {
+    margin: 0;
+}
+
+#form {
+    padding: 20px;
+}
+
+.form-control {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.form-control label {
+    display: block;
+    color: #777;
+    margin-bottom: 5px;
+}
+
+.form-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+}
+
+.form-control input:focus {
+    outline: none;
+    border-color: #777;
+}
+
+.form-control.success input {
+    border-color: #2ecc71;
+}
+
+.form-control.error input {
+    border-color: #e74c3c;
+}
+
+.form-control i {
+    visibility: hidden;
+    position: absolute;
+    top: 35px;
+    right: 10px;
+}
+
+.form-control.success .fa-check-circle {
+    color: #2ecc71;
+    visibility: visible;
+}
+
+.form-control.error .fa-exclamation-circle {
+    color: #e74c3c;
+    visibility: visible;
+}
+
+.form-control small {
+    color: #e74c3c;
+    position: absolute;
+    bottom: -18px;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+#form button {
+    background-color: #2ecc71;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    display: block;
+    font-size: 16px;
+    padding: 10px;
+    width: 100%;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.drag-container {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.column {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    flex: 1;
+    padding: 15px;
+    min-height: 400px;
+}
+
+.column h3 {
+    text-align: center;
+    margin-top: 0;
+}
+
+.item-list {
+    min-height: 350px;
+}
+
+.draggable {
+    background: #3498db;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    cursor: grab;
+}
+
+.draggable:active {
+    cursor: grabbing;
+}
